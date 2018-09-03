@@ -1,2 +1,10 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<form action="/" method="post" enctype="multipart/form-data">
+  <input type="text" name="name">
+  <br>
+  <input type="file" name="photo" id="">
+  <button type="submit">submit</button>
+</form>
+
+{{#each data}}
+<p>Name: {{name}}</p>
+<img src={{picture.imgPath}} alt="" srcset=""> {{/each}}
